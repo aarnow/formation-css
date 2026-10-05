@@ -1,0 +1,71 @@
+@import url("reset.css");
+
+/* Les deux polices téléchargées sur Google Fonts, rangées dans fonts/.
+   Ce sont des polices variables : un seul fichier couvre toutes les graisses. */
+@font-face {
+  font-family: "Playfair Display";
+  src: url("fonts/PlayfairDisplay-VariableFont_wght.ttf") format("truetype");
+  font-weight: 400 900;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Source Sans 3";
+  src: url("fonts/SourceSans3-VariableFont_wght.ttf") format("truetype");
+  font-weight: 200 900;
+  font-display: swap;
+}
+
+body {
+  font-family: "Source Sans 3", system-ui, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.6;
+  color: darkslategray;
+}
+
+main {
+  max-width: 36rem;
+  margin: 3rem auto;
+  padding: 3rem 2rem;
+  border: 3px double maroon;
+  text-align: center;
+}
+
+.surtitre {
+  font-size: 0.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  color: maroon;
+}
+
+h1,
+h2 {
+  font-family: "Playfair Display", Georgia, serif;
+  line-height: 1.2;
+  color: maroon;
+}
+
+h1 {
+  margin-block: 0.75rem 1.5rem;
+  font-size: 2.75rem;
+  font-weight: 700;
+  text-wrap: balance;
+}
+
+h2 {
+  margin: 2rem 0 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.reponse {
+  margin-top: 2.5rem;
+  font-size: 1rem;
+}
+
+a {
+  font-weight: 600;
+  color: mediumvioletred;
+  text-underline-offset: 0.25em;
+}
