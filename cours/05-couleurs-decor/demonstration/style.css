@@ -1,0 +1,73 @@
+@import url("reset.css");
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: #2b2d42;
+  background-color: #f4f1ea;
+}
+
+main {
+  max-width: 24rem;
+  margin-inline: auto;
+  padding: 3rem 1rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #e63946;
+}
+
+.intro {
+  margin-block: 0.5rem 2rem;
+  color: #5c5f6e;
+}
+
+.carte {
+  margin-bottom: 2rem;
+  overflow: hidden;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1.5rem rgb(43 45 66 / 0.15);
+}
+
+.carte-bandeau {
+  padding: 1.5rem;
+  background-image: linear-gradient(135deg, #e63946, #f4a261);
+}
+
+.medaillon {
+  width: 4rem;
+  height: 4rem;
+  margin-inline: auto;
+  border-radius: 50%;
+  background-color: #ffffff;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 4rem;
+  text-align: center;
+  color: #e63946;
+}
+
+.carte-corps {
+  padding: 1.5rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.2;
+}
+
+.rarete {
+  margin-block: 0.5rem 0.75rem;
+}
+
+.badge {
+  padding: 0.25em 0.75em;
+  border-radius: 999px;
+  background-color: hsl(355 78% 94%);
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: hsl(355 78% 32%);
+}
