@@ -1,0 +1,71 @@
+{
+  // ---------------------------------------------------------------
+  // Aperçu du site (extension Live Server, de Ritwick Dey)
+  // ---------------------------------------------------------------
+
+  // Le dossier servi : la racine du projet, là où sont vos pages.
+  "liveServer.settings.root": "/",
+
+  // Le port de l'adresse locale : http://127.0.0.1:5500
+  "liveServer.settings.port": 5501,
+
+  // ---------------------------------------------------------------
+  // Confort d'écriture du HTML
+  // ---------------------------------------------------------------
+
+  // Renommer une balise ouvrante renomme automatiquement sa fermante.
+  // Cette fonction est intégrée à VS Code : inutile d'installer
+  // l'extension "Auto Rename Tag".
+  "editor.linkedEditing": true,
+
+  // Emmet : taper  ul>li*5  puis Tab génère une liste de cinq éléments.
+  // Emmet est intégré à VS Code, aucune extension à installer.
+  "emmet.triggerExpansionOnTab": true,
+
+  // Les longues lignes de HTML reviennent à la ligne à l'écran
+  // sans être réellement coupées dans le fichier.
+  "editor.wordWrap": "on",
+
+  // Indentation de deux espaces, convention courante en HTML.
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+
+  // Affiche des repères verticaux d'indentation : très utile pour
+  // repérer une balise mal imbriquée.
+  "editor.guides.indentation": true,
+
+  // ---------------------------------------------------------------
+  // Enregistrement et mise en forme
+  // ---------------------------------------------------------------
+
+  // Enregistrement automatique une seconde après la dernière frappe :
+  // combiné à Live Server, l'aperçu se met à jour tout seul.
+  "files.autoSave": "afterDelay",
+  "files.autoSaveDelay": 1000,
+
+  // Remet le code en forme à l'enregistrement.
+  // À retirer si vous préférez que les apprenants indentent eux-mêmes.
+  "editor.formatOnSave": true,
+
+  // Conserve la disposition des attributs écrits sur plusieurs lignes
+  // (typiquement les balises <img>).
+  "html.format.wrapAttributes": "preserve",
+
+  // Ajoute une ligne vide en fin de fichier et supprime les espaces
+  // inutiles en fin de ligne.
+  "files.insertFinalNewline": true,
+  "files.trimTrailingWhitespace": true,
+
+  // ---------------------------------------------------------------
+  // Divers
+  // ---------------------------------------------------------------
+
+  // Encodage UTF-8, cohérent avec <meta charset="UTF-8">.
+  "files.encoding": "utf8",
+
+  // Masque le dossier .vscode dans l'explorateur pour ne pas
+  // distraire les apprenants. Mettre à false pour le voir.
+  "files.exclude": {
+    "**/.vscode": false
+  }
+}

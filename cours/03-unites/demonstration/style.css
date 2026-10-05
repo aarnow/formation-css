@@ -1,0 +1,49 @@
+@import url("reset.css");
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: darkslategray;
+}
+
+main {
+  width: 640px;
+  margin-inline: auto;
+  padding: 40px 20px;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+  color: palevioletred;
+}
+
+h1 {
+  font-size: 40px;
+  line-height: 48px;
+  margin-bottom: 12px;
+}
+
+.chapeau {
+  font-size: 20px;
+  color: gray;
+}
+
+h2 {
+  font-size: 24px;
+  line-height: 30px;
+  margin-top: 32px;
+  margin-bottom: 12px;
+}
+
+li + li {
+  margin-top: 8px;
+}
+
+button {
+  margin-top: 32px;
+  font-size: 14px;
+  padding: 10px 20px;
+  border: 2px solid palevioletred;
+}

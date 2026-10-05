@@ -1,0 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+h1,
+h2,
+p,
+blockquote {
+  margin: 0;
+}
+
+button {
+  font: inherit;
+}

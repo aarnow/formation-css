@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau de bord du château</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header class="entete">
+      <p class="logo">Château de Peach</p>
+      <p class="utilisateur">Connectée : la princesse</p>
+    </header>
+
+    <nav class="menu" aria-label="Navigation principale">
+      <ul>
+        <li><a href="#" aria-current="page">Tableau de bord</a></li>
+        <li><a href="#">Gardes</a></li>
+        <li><a href="#">Cuisines</a></li>
+        <li><a href="#">Trésor</a></li>
+        <li><a href="#">Invités</a></li>
+      </ul>
+    </nav>
+
+    <main class="contenu">
+      <h1>Tableau de bord</h1>
+
+      <div class="tuiles">
+        <section class="tuile">
+          <h2>Invités ce soir</h2>
+          <p class="chiffre">128</p>
+        </section>
+        <section class="tuile">
+          <h2>Gardes en poste</h2>
+          <p class="chiffre">24</p>
+        </section>
+        <section class="tuile">
+          <h2>Pièces au trésor</h2>
+          <p class="chiffre">9 870</p>
+        </section>
+        <section class="tuile">
+          <h2>Champignons en réserve</h2>
+          <p class="chiffre">312</p>
+        </section>
+
+        <section class="tuile tuile-annonce">
+          <h2>Annonce du jour</h2>
+          <p>
+            Le bal de clôture de la saison a lieu ce soir dans la grande salle.
+            Les gardes de l'aile est sont priés de laisser leurs carapaces au
+            vestiaire.
+          </p>
+        </section>
+
+        <section class="tuile tuile-agenda">
+          <h2>Agenda</h2>
+          <ul class="agenda">
+            <li><span class="heure">9 h</span> Conseil du royaume</li>
+            <li><span class="heure">11 h</span> Visite des cuisines</li>
+            <li><span class="heure">14 h</span> Course de karts</li>
+            <li><span class="heure">17 h</span> Répétition du bal</li>
+            <li><span class="heure">20 h</span> Bal de clôture</li>
+          </ul>
+        </section>
+
+        <section class="tuile">
+          <h2>Météo</h2>
+          <p>Ensoleillé, 22 °C. Risque d'averse de Bob-ombs en soirée.</p>
+        </section>
+
+        <section class="tuile">
+          <h2>Dernier message</h2>
+          <p>Toad : « Les champignons de demain sont arrivés. »</p>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

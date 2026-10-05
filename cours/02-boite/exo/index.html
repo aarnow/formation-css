@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tableau d'affichage du château</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>Tableau d'affichage du château</h1>
+        <p>Les annonces des habitants, relevées chaque matin par Toad.</p>
+      </header>
+
+      <section>
+        <h2>Annonces du jour</h2>
+
+        <article class="annonce urgente">
+          <h3>Recherche plombier, urgent</h3>
+          <p>Un tuyau vert fuit dans la salle du trône depuis ce matin. Toute aide est la bienvenue.</p>
+          <p class="signature">Peach</p>
+        </article>
+
+        <article class="annonce">
+          <h3>Vends kart d'occasion</h3>
+          <p>Peu servi, pneus neufs. Quelques traces de carapace sur la carrosserie.</p>
+          <p class="signature">Wario</p>
+        </article>
+
+        <article class="annonce">
+          <h3>Cours de saut en longueur</h3>
+          <p>Tous les samedis matin, dans la plaine. Débutants bienvenus, gouffres fournis.</p>
+          <p class="signature">Yoshi</p>
+        </article>
+      </section>
+
+      <section>
+        <h2>Déposer une annonce</h2>
+
+        <form action="#" method="get">
+          <fieldset>
+            <legend>Votre annonce</legend>
+
+            <label for="titre">Titre</label>
+            <input type="text" id="titre" name="titre" required>
+
+            <label for="texte">Texte</label>
+            <textarea id="texte" name="texte" rows="3" required></textarea>
+
+            <button type="submit">Épingler l'annonce</button>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

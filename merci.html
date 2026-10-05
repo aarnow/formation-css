@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<!--
+  Author : Mario
+  Created At : 06/09/2026
+-->
+
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Message envoyé · Mario</title>
+    <meta name="description" content="Votre message a bien été envoyé à Mario. Cette page confirme la réception du formulaire de contact et vous invite à poursuivre la visite du site.">
+    <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <meta name="robots" content="noindex">
+  </head>
+  <body id="haut">
+    <header>
+      <nav aria-label="Menu principal">
+        <ul>
+          <li><a href="index.html">Présentation</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="soutenances.html">Soutenances</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <p>Merci, votre message est bien parti.</p>
+      <ul id="recap"></ul>
+    </main>
+
+    <footer>
+      <nav aria-label="Liens du site">
+        <ul>
+          <li><a href="index.html">Présentation</a></li>
+          <li><a href="ressources.html">Ressources</a></li>
+          <li><a href="soutenances.html">Soutenances</a></li>
+        </ul>
+      </nav>
+
+      <p><a href="#haut">Revenir en haut de la page</a></p>
+
+      <p><small>© <time datetime="2026">2026</time> Mario</small></p>
+    </footer>
+
+    <script>
+      const recap = document.getElementById('recap');
+
+      for (const [cle, valeur] of new URLSearchParams(window.location.search)) {
+        const item = document.createElement('li');
+        item.textContent = cle + ' : ' + valeur;
+        recap.append(item);
+      }
+    </script>
+  </body>
+</html>
