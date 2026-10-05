@@ -1,0 +1,39 @@
+body {
+  font-family: system-ui, sans-serif;
+  color: darkslategray;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+  color: saddlebrown;
+}
+
+.slogan {
+  font-size: 1.2rem;
+  font-style: italic;
+  color: gray;
+}
+
+li strong {
+  color: seagreen;
+}
+
+p + p {
+  text-indent: 1.5em;
+}
+
+a {
+  color: chocolate;
+}
+
+footer {
+  font-size: 0.9rem;
+  color: gray;
+}
+
+footer a {
+  font-weight: bold;
+  text-decoration: none;
+}
