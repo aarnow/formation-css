@@ -117,3 +117,38 @@ h1 {
   font-weight: 700;
   color: var(--color-primary);
 }
+
+/* Sous 768px : le menu passe au-dessus du contenu, ses liens en ligne. */
+@media (max-width: 768px) {
+  body {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas:
+      "entete"
+      "menu"
+      "contenu";
+  }
+
+  .entete {
+    flex-wrap: wrap;
+    gap: 0.25rem 1rem;
+  }
+
+  .menu {
+    padding: 0.75rem 1rem;
+  }
+
+  .menu ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.25rem;
+  }
+
+  .menu li + li {
+    margin-top: 0;
+  }
+
+  .contenu {
+    padding: 1.5rem 1rem 2rem;
+  }
+}
