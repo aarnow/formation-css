@@ -1,0 +1,23 @@
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+main {
+  max-width: 48rem;
+  margin-inline: auto;
+  padding: 2rem 1.5rem 3rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+h2 {
+  margin-bottom: 1rem;
+  font-size: 1.375rem;
+  line-height: 1.2;
+}

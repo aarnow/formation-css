@@ -1,0 +1,46 @@
+.accroche {
+  margin-bottom: 3rem;
+  padding: 2.5rem;
+  background-color: var(--color-primary-light);
+  border-radius: var(--radius);
+}
+
+.accroche p {
+  max-width: 40ch;
+  margin-block: 1rem 1.5rem;
+}
+
+.cartes {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1.5rem;
+}
+
+.carte {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  padding: 1.5rem;
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+}
+
+.carte h3 {
+  font-size: 1.25rem;
+}
+
+.carte-prix {
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.carte .bouton {
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+@media (max-width: 768px) {
+  .accroche {
+    padding: 1.5rem;
+  }
+}

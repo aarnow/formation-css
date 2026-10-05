@@ -1,0 +1,34 @@
+.bouton {
+  display: inline-block;
+  padding: 0.625rem 1.5rem;
+  border-radius: 999px;
+  background-color: var(--color-primary);
+  font-weight: 700;
+  color: var(--color-surface);
+  text-decoration: none;
+  transition: background-color 0.2s ease;
+}
+
+.bouton:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 85%, black);
+}
+
+.bouton:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.bouton-discret {
+  background-color: var(--color-primary-light);
+  color: var(--color-primary);
+}
+
+.bouton-discret:hover {
+  background-color: color-mix(in srgb, var(--color-primary) 20%, white);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .bouton {
+    transition: none;
+  }
+}

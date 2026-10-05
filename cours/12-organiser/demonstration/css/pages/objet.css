@@ -1,0 +1,43 @@
+.fiche {
+  display: grid;
+  grid-template-columns: 16rem 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.fiche-vignette {
+  border-radius: var(--radius);
+  background-color: var(--color-primary-light);
+  font-size: 8rem;
+  line-height: 16rem;
+  text-align: center;
+}
+
+.fiche-prix {
+  margin-block: 0.5rem 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.fiche-details {
+  margin-block: 1.25rem 1.75rem;
+  padding-left: 1.25rem;
+  list-style: disc;
+}
+
+.fiche-details li + li {
+  margin-top: 0.25rem;
+}
+
+@media (max-width: 768px) {
+  .fiche {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .fiche-vignette {
+    font-size: 5rem;
+    line-height: 10rem;
+  }
+}
