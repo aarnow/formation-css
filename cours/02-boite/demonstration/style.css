@@ -1,0 +1,54 @@
+@import url("reset.css");
+
+/* Le texte, comme au bloc 01 */
+body {
+  font-family: system-ui, sans-serif;
+  color: darkslategray;
+  line-height: 1.5;
+}
+
+h1,
+h2 {
+  font-family: Georgia, serif;
+  color: firebrick;
+}
+
+/* La colonne, centrée */
+main {
+  width: 560px;
+  margin-inline: auto;
+  padding-block: 40px;
+}
+
+header {
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 2px solid firebrick;
+}
+
+/* Les cartes */
+.carte {
+  padding: 16px 20px;
+  border: 2px solid lightgray;
+}
+
+.carte + .carte {
+  margin-top: 16px;
+}
+
+.carte h2 {
+  margin-bottom: 8px;
+}
+
+.effet {
+  margin-top: 12px;
+  padding-top: 12px;
+  border-top: 1px dashed lightgray;
+  font-weight: bold;
+}
+
+footer {
+  margin-top: 32px;
+  font-size: 0.9rem;
+  color: gray;
+}
