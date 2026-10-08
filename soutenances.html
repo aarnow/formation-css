@@ -14,14 +14,15 @@
     <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/soutenances.css">
 
     <!-- Remplacez VOTRE-PSEUDO par votre identifiant GitHub. -->
     <link rel="canonical" href="https://VOTRE-PSEUDO.github.io/formation-css/soutenances.html">
   </head>
   <body id="haut">
-    <header>
+    <header class="site-header">
       <nav aria-label="Menu principal">
-        <ul>
+        <ul class="container">
           <li><a href="index.html">Présentation</a></li>
           <li><a href="ressources.html">Ressources</a></li>
           <li><a href="soutenances.html" aria-current="page">Soutenances</a></li>
@@ -29,11 +30,11 @@
       </nav>
     </header>
 
-    <main>
+    <main class="container page-spacing">
       <h1>Mes soutenances</h1>
       <p>Plusieurs fois dans l'année, nous réalisons des projets à présenter devant un jury : ce que j'ai construit, comment, et ce que je ferais autrement.</p>
       <p>Cette page référence les projets passés et à venir, les technologies employées et un lien vers le résultat en production.</p>
-      <div>
+      <div class="progress-wrapper">
         <label for="avancement">Soutenances passées</label>
         <progress value="1" max="2" id="avancement">1 sur 2</progress>
         1 sur 2
@@ -79,18 +80,20 @@
         </article>
     </main>
 
-    <footer>
-      <nav aria-label="Liens du site">
-        <ul>
-          <li><a href="index.html">Présentation</a></li>
-          <li><a href="ressources.html">Ressources</a></li>
-          <li><a href="soutenances.html" aria-current="page">Soutenances</a></li>
-        </ul>
-      </nav>
+    <footer class="site-footer">
+      <div class="container">
+        <nav aria-label="Liens du site">
+          <ul>
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="soutenances.html" aria-current="page">Soutenances</a></li>
+          </ul>
+        </nav>
 
-      <p><a href="#haut">Revenir en haut de la page</a></p>
+        <p><a href="#haut">Revenir en haut de la page</a></p>
 
-      <p><small>© <time datetime="2026">2026</time> Mario</small></p>
+        <p><small>© <time datetime="2026">2026</time> Mario</small></p>
+      </div>
     </footer>
   </body>
 </html>

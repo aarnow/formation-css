@@ -1,0 +1,149 @@
+/* #region Jauge */
+
+.progress-wrapper {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 0.6rem 1rem;
+  margin-top: 2rem;
+}
+
+progress {
+  grid-row: 2;
+  grid-column: 1 / -1;
+  width: 100%;
+  height: 1.25rem;
+  border: none;
+  border-radius: 999px;
+  background-color: var(--color-border);
+}
+
+progress::-webkit-progress-bar {
+  border-radius: 999px;
+  background-color: var(--color-border);
+}
+
+progress::-webkit-progress-value {
+  border-radius: 999px;
+  background-color: var(--color-primary-light);
+}
+
+progress::-moz-progress-bar {
+  border-radius: 999px;
+  background-color: var(--color-primary-light);
+}
+/* #endregion */
+
+/* #region Projets */
+
+article {
+  max-width: calc(var(--content-max-width) * 0.8);
+  margin-top: 2rem;
+  margin-inline: auto;
+  padding: 1.5rem;
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius);
+}
+
+article h2 {
+  font-size: 1.25rem;
+}
+
+article time {
+  font-size: 0.92rem;
+  color: var(--color-text-muted);
+}
+/* #endregion */
+
+/* #region Volets dépliants */
+
+main details {
+  margin-block: 1.25rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--color-bg);
+  border: 1px solid var(--color-border);
+  border-radius: 8px;
+}
+
+main summary {
+  font-weight: 650;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition:
+    margin-bottom 0.35s ease,
+    padding-bottom 0.35s ease;
+}
+
+main details[open] summary {
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 1px solid var(--color-border);
+}
+
+main details::details-content {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition:
+    grid-template-rows 0.35s ease,
+    content-visibility 0.35s allow-discrete;
+}
+
+main details[open]::details-content {
+  grid-template-rows: 1fr;
+}
+
+main details dl {
+  overflow: hidden;
+}
+/* #endregion */
+
+/* #region Liste de définitions */
+
+dl {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 0.35rem 1.5rem;
+  font-size: 0.95rem;
+}
+
+dt {
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+dd {
+  grid-column: 2;
+}
+/* #endregion */
+
+/* #region Mouvement réduit */
+@media (prefers-reduced-motion: reduce) {
+  main summary,
+  main details::details-content {
+    transition: none;
+  }
+}
+/* #endregion */
+
+/* #region Responsive (format mobile < 768px) */
+@media (max-width: 768px) {
+  /* En 5rem, « soutenances » est plus large que l'écran. */
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  article {
+    padding: 1.1rem;
+  }
+
+  dl {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  dd {
+    grid-column: 1;
+    margin-bottom: 0.6rem;
+  }
+}
+/* #endregion */
