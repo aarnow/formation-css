@@ -14,14 +14,15 @@
     <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/ressources.css">
 
     <!-- Remplacez VOTRE-PSEUDO par votre identifiant GitHub. -->
     <link rel="canonical" href="https://VOTRE-PSEUDO.github.io/formation-css/ressources.html">
   </head>
   <body id="haut">
-    <header>
+    <header class="site-header">
       <nav aria-label="Menu principal">
-        <ul>
+        <ul class="container">
           <li><a href="index.html">Présentation</a></li>
           <li><a href="ressources.html" aria-current="page">Ressources</a></li>
           <li><a href="soutenances.html">Soutenances</a></li>
@@ -29,249 +30,289 @@
       </nav>
     </header>
 
-    <main>
-      <h1>Mes ressources</h1>
-      <p>
-        Une liste d'outils gratuits pour concevoir un site web, surtout du côté
-        du design : de quoi trouver des idées, choisir des couleurs et une
-        police, puis remplir la page.
-      </p>
+    <main class="container page-spacing">
+      <div class="sidebar">
+        <h1>Mes ressources</h1>
+        <p>
+          Une liste d'outils gratuits pour concevoir un site web, surtout du côté
+          du design : de quoi trouver des idées, choisir des couleurs et une
+          police, puis remplir la page.
+        </p>
 
-      <nav aria-label="Sommaire de la page">
-        <ol>
-          <li><a href="#inspiration">Inspiration</a></li>
-          <li><a href="#couleurs">Couleurs</a></li>
-          <li><a href="#typographie">Typographie</a></li>
-          <li><a href="#icones">Icônes</a></li>
-          <li><a href="#photos">Photos et illustrations</a></li>
-          <li><a href="#extensions">Extensions</a></li>
-        </ol>
-      </nav>
+        <nav aria-label="Sommaire de la page">
+          <ol>
+            <li><a href="#inspiration">Inspiration</a></li>
+            <li><a href="#couleurs">Couleurs</a></li>
+            <li><a href="#typographie">Typographie</a></li>
+            <li><a href="#icones">Icônes</a></li>
+            <li><a href="#photos">Photos et illustrations</a></li>
+            <li><a href="#extensions">Extensions</a></li>
+          </ol>
+        </nav>
+      </div>
 
-      <section id="inspiration">
-        <h2>Inspiration</h2>
+      <div class="catalogue">
+        <section id="inspiration">
+          <h2>Inspiration</h2>
 
-        <a href="https://land-book.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/landbook.png" alt="" width="256" height="256">
-            <h3>Land-book</h3>
-            <p>
-              Une galerie de pages d'accueil de vrais sites, rangées par secteur
-              d'activité et par style.
-            </p>
-          </article>
-        </a>
+          <a href="https://land-book.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/landbook.png" alt="" width="256" height="256">
+              </header>
+              <h3>Land-book</h3>
+              <p>
+                Une galerie de pages d'accueil de vrais sites, rangées par secteur
+                d'activité et par style.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://www.lapa.ninja/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/lapaninja.png" alt="" width="256" height="256">
-            <h3>Lapa Ninja</h3>
-            <p>
-              Le même principe, avec en prime des maquettes et des polices
-              réutilisables librement.
-            </p>
-          </article>
-        </a>
+          <a href="https://www.lapa.ninja/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/lapaninja.png" alt="" width="256" height="256">
+              </header>
+              <h3>Lapa Ninja</h3>
+              <p>
+                Le même principe, avec en prime des maquettes et des polices
+                réutilisables librement.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/dribbble.png" alt="" width="256" height="256">
-            <h3>Dribbble</h3>
-            <p>
-              La vitrine des designers. On y voit surtout des intentions, rarement
-              des sites qui existent vraiment.
-            </p>
-          </article>
-        </a>
+          <a href="https://dribbble.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/dribbble.png" alt="" width="256" height="256">
+              </header>
+              <h3>Dribbble</h3>
+              <p>
+                La vitrine des designers. On y voit surtout des intentions, rarement
+                des sites qui existent vraiment.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://typespiration.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/typespiration.png" alt="" width="256" height="256">
-            <h3>Typespiration</h3>
-            <p>
-              Des associations de polices et de couleurs présentées ensemble, sur
-              une page d'exemple.
-            </p>
-          </article>
-        </a>
-      </section>
+          <a href="https://typespiration.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/typespiration.png" alt="" width="256" height="256">
+              </header>
+              <h3>Typespiration</h3>
+              <p>
+                Des associations de polices et de couleurs présentées ensemble, sur
+                une page d'exemple.
+              </p>
+            </article>
+          </a>
+        </section>
 
-      <section id="couleurs">
-        <h2>Couleurs</h2>
+        <section id="couleurs">
+          <h2>Couleurs</h2>
 
-        <a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/coolors.png" alt="" width="256" height="256">
-            <h3>Coolors</h3>
-            <p>
-              Génère une palette de cinq couleurs à la barre d'espace, et
-              verrouille celles qu'on veut garder.
-            </p>
-          </article>
-        </a>
-      </section>
+          <a href="https://coolors.co/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/coolors.png" alt="" width="256" height="256">
+              </header>
+              <h3>Coolors</h3>
+              <p>
+                Génère une palette de cinq couleurs à la barre d'espace, et
+                verrouille celles qu'on veut garder.
+              </p>
+            </article>
+          </a>
+        </section>
 
-      <section id="typographie">
-        <h2>Typographie</h2>
+        <section id="typographie">
+          <h2>Typographie</h2>
 
-        <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/google-fonts.png" alt="" width="256" height="256">
-            <h3>Google Fonts</h3>
-            <p>
-              Une bibliothèque de polices libres, que l'on relie à sa page en une
-              ligne, sans rien télécharger.
-            </p>
-          </article>
-        </a>
-      </section>
+          <a href="https://fonts.google.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/google-fonts.png" alt="" width="256" height="256">
+              </header>
+              <h3>Google Fonts</h3>
+              <p>
+                Une bibliothèque de polices libres, que l'on relie à sa page en une
+                ligne, sans rien télécharger.
+              </p>
+            </article>
+          </a>
+        </section>
 
-      <section id="icones">
-        <h2>Icônes</h2>
+        <section id="icones">
+          <h2>Icônes</h2>
 
-        <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/flaticon.png" alt="" width="256" height="256">
-            <h3>Flaticon</h3>
-            <p>
-              Un très grand catalogue, en SVG comme en PNG. L'offre gratuite
-              demande de citer l'auteur.
-            </p>
-          </article>
-        </a>
+          <a href="https://www.flaticon.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/flaticon.png" alt="" width="256" height="256">
+              </header>
+              <h3>Flaticon</h3>
+              <p>
+                Un très grand catalogue, en SVG comme en PNG. L'offre gratuite
+                demande de citer l'auteur.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://fonts.google.com/icons" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/material-design-google.png" alt="" width="256" height="256">
-            <h3>Material Symbols</h3>
-            <p>
-              Le jeu d'icônes de Google. Moins fourni, mais toutes les icônes ont
-              le même trait.
-            </p>
-          </article>
-        </a>
-      </section>
+          <a href="https://fonts.google.com/icons" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/material-design-google.png" alt="" width="256" height="256">
+              </header>
+              <h3>Material Symbols</h3>
+              <p>
+                Le jeu d'icônes de Google. Moins fourni, mais toutes les icônes ont
+                le même trait.
+              </p>
+            </article>
+          </a>
+        </section>
 
-      <section id="photos">
-        <h2>Photos et illustrations</h2>
+        <section id="photos">
+          <h2>Photos et illustrations</h2>
 
-        <a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/lorem-picsum.png" alt="" width="256" height="256">
-            <h3>Picsum</h3>
-            <p>
-              Fournit une image d'exemple à la taille demandée, directement par
-              son adresse. Le faux texte, mais en photo.
-            </p>
-          </article>
-        </a>
+          <a href="https://picsum.photos/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/lorem-picsum.png" alt="" width="256" height="256">
+              </header>
+              <h3>Picsum</h3>
+              <p>
+                Fournit une image d'exemple à la taille demandée, directement par
+                son adresse. Le faux texte, mais en photo.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://www.pexels.com/fr-fr/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/pexels.png" alt="" width="256" height="256">
-            <h3>Pexels</h3>
-            <p>
-              Des photos libres, avec une recherche en français et des collections
-              toutes prêtes.
-            </p>
-          </article>
-        </a>
+          <a href="https://www.pexels.com/fr-fr/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/pexels.png" alt="" width="256" height="256">
+              </header>
+              <h3>Pexels</h3>
+              <p>
+                Des photos libres, avec une recherche en français et des collections
+                toutes prêtes.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://unsplash.com/fr" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/unsplash.png" alt="" width="256" height="256">
-            <h3>Unsplash</h3>
-            <p>
-              Le plus grand des trois, et le plus reconnaissable : ses photos se
-              croisent partout.
-            </p>
-          </article>
-        </a>
+          <a href="https://unsplash.com/fr" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/unsplash.png" alt="" width="256" height="256">
+              </header>
+              <h3>Unsplash</h3>
+              <p>
+                Le plus grand des trois, et le plus reconnaissable : ses photos se
+                croisent partout.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://undraw.co/illustrations" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/undraw.png" alt="" width="256" height="256">
-            <h3>unDraw</h3>
-            <p>
-              Des illustrations en SVG dont on choisit la couleur avant de les
-              télécharger.
-            </p>
-          </article>
-        </a>
+          <a href="https://undraw.co/illustrations" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/undraw.png" alt="" width="256" height="256">
+              </header>
+              <h3>unDraw</h3>
+              <p>
+                Des illustrations en SVG dont on choisit la couleur avant de les
+                télécharger.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://www.humaaans.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/humaaans.png" alt="" width="256" height="256">
-            <h3>Humaaans</h3>
-            <p>
-              Des personnages à assembler, pose et vêtements au choix. Utile quand
-              une photo ferait trop réaliste.
-            </p>
-          </article>
-        </a>
-      </section>
+          <a href="https://www.humaaans.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/humaaans.png" alt="" width="256" height="256">
+              </header>
+              <h3>Humaaans</h3>
+              <p>
+                Des personnages à assembler, pose et vêtements au choix. Utile quand
+                une photo ferait trop réaliste.
+              </p>
+            </article>
+          </a>
+        </section>
 
-      <section id="extensions">
-        <h2>Extensions</h2>
+        <section id="extensions">
+          <h2>Extensions</h2>
 
-        <a href="https://wave.webaim.org/extension/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/wave.png" alt="" width="256" height="256">
-            <h3>WAVE</h3>
-            <p>
-              Superpose les problèmes d'accessibilité sur la page, et liste dans
-              son panneau Order l'ordre où la touche Tab atteint les éléments.
-            </p>
-          </article>
-        </a>
+          <a href="https://wave.webaim.org/extension/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/wave.png" alt="" width="256" height="256">
+              </header>
+              <h3>WAVE</h3>
+              <p>
+                Superpose les problèmes d'accessibilité sur la page, et liste dans
+                son panneau Order l'ordre où la touche Tab atteint les éléments.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://www.wappalyzer.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/wappalyzer.png" alt="" width="256" height="256">
-            <h3>Wappalyzer</h3>
-            <p>
-              Annonce les technologies employées par le site qu'on visite. Une
-              façon de répondre à « c'est fait avec quoi ? ».
-            </p>
-          </article>
-        </a>
+          <a href="https://www.wappalyzer.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/wappalyzer.png" alt="" width="256" height="256">
+              </header>
+              <h3>Wappalyzer</h3>
+              <p>
+                Annonce les technologies employées par le site qu'on visite. Une
+                façon de répondre à « c'est fait avec quoi ? ».
+              </p>
+            </article>
+          </a>
 
-        <a href="https://www.colorzilla.com/" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/colorzilla.png" alt="" width="256" height="256">
-            <h3>ColorZilla</h3>
-            <p>
-              Une pipette qui relève la couleur exacte d'un pixel à l'écran, et
-              son code hexadécimal.
-            </p>
-          </article>
-        </a>
+          <a href="https://www.colorzilla.com/" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/colorzilla.png" alt="" width="256" height="256">
+              </header>
+              <h3>ColorZilla</h3>
+              <p>
+                Une pipette qui relève la couleur exacte d'un pixel à l'écran, et
+                son code hexadécimal.
+              </p>
+            </article>
+          </a>
 
-        <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" rel="noopener noreferrer">
-          <article>
-            <img src="assets/img/logos/lighthouse.png" alt="" width="256" height="256">
-            <h3>Lighthouse</h3>
-            <p>
-              Intégré à Chrome. Note la page sur cent en performance, en
-              accessibilité et en référencement.
-            </p>
-          </article>
-        </a>
-      </section>
+          <a href="https://developer.chrome.com/docs/lighthouse/overview" target="_blank" rel="noopener noreferrer">
+            <article>
+              <header>
+                <img src="assets/img/logos/lighthouse.png" alt="" width="256" height="256">
+              </header>
+              <h3>Lighthouse</h3>
+              <p>
+                Intégré à Chrome. Note la page sur cent en performance, en
+                accessibilité et en référencement.
+              </p>
+            </article>
+          </a>
+        </section>
+      </div>
     </main>
 
-    <footer>
-      <nav aria-label="Liens du site">
-        <ul>
-          <li><a href="index.html">Présentation</a></li>
-          <li><a href="ressources.html" aria-current="page">Ressources</a></li>
-          <li><a href="soutenances.html">Soutenances</a></li>
-        </ul>
-      </nav>
+    <footer class="site-footer">
+      <div class="container">
+        <nav aria-label="Liens du site">
+          <ul>
+            <li><a href="index.html">Présentation</a></li>
+            <li><a href="ressources.html" aria-current="page">Ressources</a></li>
+            <li><a href="soutenances.html">Soutenances</a></li>
+          </ul>
+        </nav>
 
-      <p><a href="#haut">Revenir en haut de la page</a></p>
+        <p><a href="#haut">Revenir en haut de la page</a></p>
 
-      <p><small>© <time datetime="2026">2026</time> Mario</small></p>
+        <p><small>© <time datetime="2026">2026</time> Mario</small></p>
+      </div>
     </footer>
   </body>
 </html>
