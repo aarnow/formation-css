@@ -1,0 +1,8 @@
+/* Point d'entrée : les styles communs à toutes les pages.
+   Chaque page charge en plus sa propre feuille, dans css/pages/. */
+@import url("base/variables.css");
+@import url("base/reset.css");
+@import url("base/document.css");
+@import url("components/entete.css");
+@import url("components/pied.css");
+@import url("components/bouton.css");

@@ -1,10 +1,29 @@
 @import url("reset.css");
 
+:root {
+  --color-primary: #1d4e89;
+  --color-primary-light: #dbe6f2;
+  --color-gradient-end: #2c6aa8;
+  --color-text: #1d2b3a;
+  --color-text-muted: #5a6b7d;
+  --color-bg: #eef2f6;
+  --color-surface: #ffffff;
+  --color-surface-alt: #f5f8fb;
+  --color-border: #d5dde6;
+
+  --color-success: #1b6b3a;
+  --color-success-bg: #dcf2e3;
+  --color-warning: #8a4b00;
+  --color-warning-bg: #fdecc8;
+  --color-error: #a1162b;
+  --color-error-bg: #fbe0e3;
+}
+
 body {
   font-family: system-ui, sans-serif;
   line-height: 1.5;
-  color: #1d2b3a;
-  background-color: #eef2f6;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 main {
@@ -16,22 +35,19 @@ main {
 h1 {
   font-size: 2rem;
   line-height: 1.2;
-  color: #1d4e89;
+  color: var(--color-primary);
 }
 
 .mise-a-jour {
   margin-block: 0.25rem 1.5rem;
-  color: #5a6b7d;
+  color: var(--color-text-muted);
 }
 
-/* Le cadre est posé sur le conteneur : un tableau ne peut pas défiler, et
-   en border-collapse: collapse sa bordure ne s'arrondit pas. overflow-x: auto
-   rogne les coins et fait défiler le tableau sur un écran étroit. */
 .horaires {
   overflow-x: auto;
-  background-color: #ffffff;
+  background-color: var(--color-surface);
   border-radius: 0.75rem;
-  box-shadow: 0 0.25rem 1rem rgb(29 43 58 / 0.12);
+  box-shadow: 0 0.25rem 1rem color-mix(in srgb, var(--color-text) 12%, transparent);
 }
 
 table {
@@ -41,57 +57,60 @@ table {
 
 caption {
   padding: 1rem 1.25rem;
-  background-color: #1d4e89;
-  background-image: linear-gradient(90deg, #1d4e89, #2c6aa8);
+  background-color: var(--color-primary);
+  background-image: linear-gradient(90deg, var(--color-primary), var(--color-gradient-end));
   font-size: 1.25rem;
   font-weight: 700;
   text-align: left;
-  color: #ffffff;
+  color: var(--color-surface);
 }
 
 th,
 td {
   padding: 0.75rem 1.25rem;
   text-align: left;
-  border-bottom: 1px solid #d5dde6;
+  border-bottom: 1px solid var(--color-border);
 }
 
 th {
-  background-color: #dbe6f2;
+  background-color: var(--color-primary-light);
   font-size: 0.875rem;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  color: #1d4e89;
+  color: var(--color-primary);
 }
 
 .alterne {
-  background-color: #f5f8fb;
+  background-color: var(--color-surface-alt);
 }
 
+/* Chaque variante ne fait que définir les deux couleurs de la pastille. */
 .etat {
   padding: 0.25em 0.75em;
   border-radius: 999px;
+  background-color: var(--etat-bg);
   font-size: 0.875rem;
   font-weight: 600;
+  color: var(--etat-color);
 }
 
 .etat-ok {
-  background-color: #dcf2e3;
-  color: #1b6b3a;
+  --etat-color: var(--color-success);
+  --etat-bg: var(--color-success-bg);
 }
 
 .etat-retard {
-  background-color: #fdecc8;
-  color: #8a4b00;
+  --etat-color: var(--color-warning);
+  --etat-bg: var(--color-warning-bg);
 }
 
 .etat-supprime {
-  background-color: #fbe0e3;
-  color: #a1162b;
+  --etat-color: var(--color-error);
+  --etat-bg: var(--color-error-bg);
 }
 
 .note {
   margin-top: 1rem;
   font-size: 0.875rem;
-  color: #5a6b7d;
+  color: var(--color-text-muted);
 }

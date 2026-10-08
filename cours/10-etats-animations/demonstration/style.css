@@ -1,0 +1,115 @@
+@import url("reset.css");
+
+:root {
+  --color-primary: #2456b3;
+  --color-accent: #c2410c;
+  --color-gold: #8a6100;
+  --color-text: #1d2433;
+  --color-text-muted: #5b6275;
+  --color-bg: #f2f5fb;
+  --color-surface: #ffffff;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+main {
+  max-width: 52rem;
+  margin-inline: auto;
+  padding: 3rem 1.5rem;
+}
+
+h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+.intro {
+  margin-block: 0.5rem 2rem;
+  color: var(--color-text-muted);
+}
+
+.niveaux {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(11rem, 1fr));
+  gap: 1.5rem;
+}
+
+.niveau {
+  position: relative;
+  display: block;
+  height: 100%;
+  padding: 1.25rem;
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+  box-shadow: 0 0.125rem 0.5rem color-mix(in srgb, var(--color-text) 10%, transparent);
+  color: var(--color-text);
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.niveau:hover {
+  transform: translateY(-0.25rem);
+  box-shadow: 0 0.75rem 1.5rem color-mix(in srgb, var(--color-text) 20%, transparent);
+}
+
+.niveau:active {
+  transform: translateY(0) scale(0.98);
+}
+
+.niveau:focus-visible {
+  outline: 3px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+.numero {
+  display: block;
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+.termine::before {
+  content: "★ Terminé";
+  display: block;
+  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-gold);
+}
+
+.badge {
+  position: absolute;
+  top: -0.625rem;
+  right: 1rem;
+  padding: 0.125rem 0.625rem;
+  border-radius: 999px;
+  background-color: var(--color-accent);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-surface);
+  animation: pulsation 1.5s ease-in-out infinite;
+}
+
+@keyframes pulsation {
+  50% {
+    transform: scale(1.15);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .niveau {
+    transition: none;
+  }
+
+  .badge {
+    animation: none;
+  }
+}

@@ -1,0 +1,136 @@
+@import url("reset.css");
+
+:root {
+  --color-primary: #2f4a9e;
+  --color-primary-light: #e6eaf7;
+  --color-accent: #f6c343;
+  --color-text: #1f2433;
+  --color-text-muted: #5b6070;
+  --color-bg: #f5f6fa;
+  --color-surface: #ffffff;
+}
+
+/* La page : quatre zones nommées. */
+body {
+  display: grid;
+  grid-template-columns: 14rem 1fr;
+  grid-template-areas:
+    "entete  entete"
+    "filtres contenu"
+    "pied    pied";
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.entete {
+  grid-area: entete;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-primary);
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-surface);
+}
+
+.filtres {
+  grid-area: filtres;
+  padding: 2rem 1.5rem;
+}
+
+.filtres h2 {
+  margin-bottom: 0.75rem;
+  font-size: 1rem;
+}
+
+.filtres-liste li + li {
+  margin-top: 0.5rem;
+}
+
+.filtres-liste a {
+  color: var(--color-primary);
+}
+
+.contenu {
+  grid-area: contenu;
+  padding: 2rem 1.5rem 3rem 0;
+}
+
+.pied {
+  grid-area: pied;
+  padding: 1.5rem;
+  font-size: 0.875rem;
+  text-align: center;
+  color: var(--color-text-muted);
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* La galerie : autant de colonnes de 10rem au moins que la place en permet. */
+.galerie {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+  gap: 1.25rem;
+}
+
+.costume {
+  padding: 1rem;
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+}
+
+.vignette {
+  margin-bottom: 0.75rem;
+  border-radius: 0.5rem;
+  background-color: var(--color-accent);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 6rem;
+  text-align: center;
+  color: var(--color-primary);
+}
+
+.costume h2 {
+  font-size: 1.125rem;
+  line-height: 1.2;
+}
+
+.prix {
+  color: var(--color-text-muted);
+}
+
+/* Le costume du mois occupe deux colonnes et deux lignes. */
+.costume-vedette {
+  grid-column: span 2;
+  grid-row: span 2;
+}
+
+.costume-vedette .vignette {
+  font-size: 5rem;
+  line-height: 12rem;
+}
+
+.vedette {
+  font-size: 0.875rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-primary);
+}
+
+/* L'annonce va de la première à la dernière ligne de la grille. */
+.annonce {
+  grid-column: 1 / -1;
+  padding: 1rem 1.25rem;
+  background-color: var(--color-primary-light);
+  border-radius: 0.75rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}

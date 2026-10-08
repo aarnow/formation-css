@@ -1,0 +1,35 @@
+.entete {
+  background-color: var(--color-primary);
+}
+
+/* Le fond occupe toute la largeur ; le contenu s'aligne sur celui de main. */
+.entete-contenu {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem 1.5rem;
+  max-width: 60rem;
+  margin-inline: auto;
+  padding: 1rem 1.5rem;
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-surface);
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  gap: 1.25rem;
+}
+
+.menu a {
+  color: var(--color-surface);
+}
+
+.menu a[aria-current="page"] {
+  font-weight: 700;
+}

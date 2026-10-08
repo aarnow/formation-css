@@ -1,0 +1,62 @@
+.profil {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.avatar {
+  flex-shrink: 0;
+  width: 5rem;
+  height: 5rem;
+  border-radius: 50%;
+  background-color: var(--color-primary);
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 5rem;
+  text-align: center;
+  color: var(--color-surface);
+}
+
+.equipe {
+  color: var(--color-text-muted);
+}
+
+.stats {
+  display: flex;
+  gap: 1rem;
+  margin-block: 2rem;
+}
+
+.stat {
+  flex: 1;
+  padding: 1rem;
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+  text-align: center;
+}
+
+.stat-valeur {
+  font-size: 1.75rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+.stat-nom {
+  font-size: 0.875rem;
+  color: var(--color-text-muted);
+}
+
+.trophees {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.trophee {
+  padding: 0.375rem 1rem;
+  border-radius: 999px;
+  background-color: var(--color-primary-light);
+  font-weight: 600;
+  color: var(--color-primary);
+}

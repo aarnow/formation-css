@@ -1,0 +1,41 @@
+.sous-titre {
+  margin-block: 0.25rem 2rem;
+  color: var(--color-text-muted);
+}
+
+.classement {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.ligne {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.75rem 1.25rem;
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+}
+
+.ligne-moi {
+  background-color: var(--color-primary-light);
+}
+
+.rang {
+  width: 2rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
+
+.points {
+  margin-left: auto;
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  .ligne {
+    padding: 0.75rem 1rem;
+  }
+}

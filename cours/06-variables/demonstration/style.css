@@ -1,10 +1,22 @@
 @import url("reset.css");
 
+:root {
+  --color-accent: #e63946;
+  --color-accent-end: #f4a261;
+  --color-text: #2b2d42;
+  --color-text-muted: #5c5f6e;
+  --color-bg: #f4f1ea;
+  --color-surface: #ffffff;
+
+  --font-body: system-ui, sans-serif;
+  --radius: 1rem;
+}
+
 body {
-  font-family: system-ui, sans-serif;
+  font-family: var(--font-body);
   line-height: 1.5;
-  color: #2b2d42;
-  background-color: #f4f1ea;
+  color: var(--color-text);
+  background-color: var(--color-bg);
 }
 
 main {
@@ -16,38 +28,39 @@ main {
 h1 {
   font-size: 2rem;
   line-height: 1.2;
-  color: #e63946;
+  color: var(--color-accent);
 }
 
 .intro {
   margin-block: 0.5rem 2rem;
-  color: #5c5f6e;
+  color: var(--color-text-muted);
 }
 
 .carte {
   margin-bottom: 2rem;
   overflow: hidden;
-  background-color: #ffffff;
-  border-radius: 1rem;
-  box-shadow: 0 0.5rem 1.5rem rgb(43 45 66 / 0.15);
+  background-color: var(--color-surface);
+  border-radius: var(--radius);
+  box-shadow: 0 0.5rem 1.5rem color-mix(in srgb, var(--color-text) 15%, transparent);
 }
 
 .carte-bandeau {
   padding: 1.5rem;
-  background-image: linear-gradient(135deg, #e63946, #f4a261);
+  background-image: linear-gradient(135deg, var(--color-accent), var(--color-accent-end));
 }
 
 .medaillon {
-  width: 4rem;
-  height: 4rem;
+  --size: 4rem;
+  width: var(--size);
+  height: var(--size);
   margin-inline: auto;
   border-radius: 50%;
-  background-color: #ffffff;
-  font-size: 2rem;
+  background-color: var(--color-surface);
+  font-size: calc(var(--size) / 2);
   font-weight: 700;
-  line-height: 4rem;
+  line-height: var(--size);
   text-align: center;
-  color: #e63946;
+  color: var(--color-accent);
 }
 
 .carte-corps {
@@ -66,8 +79,8 @@ h2 {
 .badge {
   padding: 0.25em 0.75em;
   border-radius: 999px;
-  background-color: hsl(355 78% 94%);
+  background-color: color-mix(in srgb, var(--color-accent) 12%, white);
   font-size: 0.875rem;
   font-weight: 700;
-  color: hsl(355 78% 32%);
+  color: color-mix(in srgb, var(--color-accent) 60%, black);
 }

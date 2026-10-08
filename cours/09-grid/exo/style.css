@@ -1,0 +1,119 @@
+@import url("reset.css");
+
+:root {
+  --color-primary: #9d2f6b;
+  --color-primary-light: #f7e6ef;
+  --color-text: #2a1f26;
+  --color-text-muted: #6a5a63;
+  --color-bg: #fbf7f9;
+  --color-surface: #ffffff;
+}
+
+/* La page : l'en-tête sur toute la largeur, puis le menu et le contenu.
+   La seconde ligne, en 1fr, occupe toute la hauteur restante de l'écran. */
+body {
+  display: grid;
+  grid-template-columns: 15rem 1fr;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    "entete entete"
+    "menu   contenu";
+  min-height: 100vh;
+  font-family: system-ui, sans-serif;
+  line-height: 1.5;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+.entete {
+  grid-area: entete;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-primary);
+  color: var(--color-surface);
+}
+
+.logo {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.menu {
+  grid-area: menu;
+  padding: 2rem 1rem;
+  background-color: var(--color-primary-light);
+}
+
+.menu li + li {
+  margin-top: 0.25rem;
+}
+
+.menu a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  color: var(--color-primary);
+}
+
+.menu a[aria-current="page"] {
+  background-color: var(--color-surface);
+  font-weight: 700;
+}
+
+.contenu {
+  grid-area: contenu;
+  padding: 2rem 1.5rem 3rem;
+}
+
+h1 {
+  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+}
+
+/* Les tuiles : autant de colonnes de 14rem au moins que la place en permet. */
+.tuiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+  gap: 1rem;
+}
+
+.tuile {
+  padding: 1.25rem;
+  background-color: var(--color-surface);
+  border-radius: 0.75rem;
+}
+
+.tuile h2 {
+  margin-bottom: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: var(--color-text-muted);
+}
+
+.chiffre {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: var(--color-primary);
+}
+
+.tuile-annonce {
+  grid-column: 1 / -1;
+}
+
+.tuile-agenda {
+  grid-row: span 2;
+}
+
+.agenda li + li {
+  margin-top: 0.5rem;
+}
+
+.heure {
+  margin-right: 0.5rem;
+  font-weight: 700;
+  color: var(--color-primary);
+}
