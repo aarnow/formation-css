@@ -1,0 +1,14 @@
+/* https://fonts.google.com/specimen/Roboto */
+@font-face {
+  font-family: "Roboto";
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("../../assets/fonts/roboto.woff2") format("woff2");
+}
+
+/* https://fonts.google.com/specimen/Momo+Trust+Display */
+@font-face {
+  font-family: "Momo Trust Display";
+  font-display: swap;
+  src: url("../../assets/fonts/momo-trust-display.woff2") format("woff2");
+}

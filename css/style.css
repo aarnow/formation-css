@@ -1,0 +1,13 @@
+/* Point d'entrée : les styles communs aux quatre pages.
+   Chaque page charge en plus sa propre feuille, dans css/pages/. */
+
+/* Le socle : ce qui vaut pour le document entier. */
+@import url("base/reset.css");
+@import url("base/variables.css");
+@import url("base/fonts.css");
+@import url("base/document.css");
+@import url("base/utilities.css");
+
+/* Les blocs répétés dans les quatre pages. */
+@import url("components/header.css");
+@import url("components/footer.css");

@@ -14,6 +14,7 @@
     <link rel="icon" href="assets/favicon/favicon.svg" type="image/svg+xml">
 
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/pages/presentation.css">
 
     <!-- Remplacez VOTRE-PSEUDO par votre identifiant GitHub dans les trois     -->
     <!-- adresses qui suivent : la canonique, puis celles de la carte de partage. -->
@@ -27,9 +28,9 @@
     <meta property="og:description" content="Concepteur et développeur d'applications web spécialisé en Java.">
   </head>
   <body id="haut">
-    <header>
+    <header class="site-header">
       <nav aria-label="Menu principal">
-        <ul>
+        <ul class="container">
           <li><a href="index.html" aria-current="page">Présentation</a></li>
           <li><a href="ressources.html">Ressources</a></li>
           <li><a href="soutenances.html">Soutenances</a></li>
@@ -38,57 +39,79 @@
     </header>
 
     <main>
-      <h1>Mario</h1>
-      <p>Développeur Java freelance dans le Morbihan</p>
-      <img src="assets/img/photo-profil.webp" alt="Mario vu de face et souriant" width="240" height="240">
+      <div class="hero container">
+        <div>
+          <h1>Mario</h1>
+          <p class="accroche">Développeur Java freelance dans le Morbihan</p>
+        </div>
+        <img src="assets/img/photo-profil.webp" alt="Mario vu de face et souriant" width="240" height="240">
+      </div>
 
-      <section>
-        <h2>Me contacter</h2>
-        <address>
-          <ul>
-            <li><a href="mailto:mario@exemple.fr">mario@exemple.fr</a></li>
-            <li>56860 - Séné</li>
-            <li><a href="https://github.com/aarnow" target="_blank" rel="noopener noreferrer">GitHub</a></li>
-            <li><a href="tel:+33688408071">06 88 40 80 71</a></li>
-          </ul>
-        </address>
+      <section class="section-coordonnees">
+        <div class="container">
+          <h2 class="visually-hidden">Me contacter</h2>
+          <address>
+            <ul>
+              <li><a href="mailto:mario@exemple.fr">mario@exemple.fr</a></li>
+              <li>56860 - Séné</li>
+              <li><a href="https://github.com/aarnow" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+              <li><a href="tel:+33688408071">06 88 40 80 71</a></li>
+            </ul>
+          </address>
+        </div>
       </section>
 
-      <section>
-        <h2>À propos</h2>
-        <p>
-          Vingt ans que je parcours le royaume Champignon une clé à molette à la
-          main. J'ai fini par admettre deux choses : les tuyaux se ressemblent tous,
-          et les Toads qui vous remercient en vous annonçant que la princesse est
-          dans un autre château finissent par lasser.
-        </p>
-        <p>
-          J'ai donc fondé mon entreprise de conception et de développement
-          d'applications, et je quitte la plomberie sans regret. Je travaille surtout
-          pour des structures qui n'ont pas de service informatique, et le royaume en
-          compte beaucoup.
-        </p>
+      <section class="section-apropos">
+        <div class="container">
+          <h2>À propos</h2>
+          <p>
+            Vingt ans que je parcours le royaume Champignon une clé à molette à la
+            main. J'ai fini par admettre deux choses : les tuyaux se ressemblent tous,
+            et les Toads qui vous remercient en vous annonçant que la princesse est
+            dans un autre château finissent par lasser.
+          </p>
+          <p>
+            J'ai donc fondé mon entreprise de conception et de développement
+            d'applications, et je quitte la plomberie sans regret. Je travaille surtout
+            pour des structures qui n'ont pas de service informatique, et le royaume en
+            compte beaucoup.
+          </p>
+        </div>
       </section>
 
-      <section>
+      <section class="section-parcours container">
         <h2>Formations et expériences</h2>
         <ul>
-          <li><strong>Titre professionnel Concepteur Développeur d'Applications</strong>, Le Comptoir Numérique, Vannes. <time datetime="2024-09">Septembre 2024</time> à <time datetime="2025-07">juillet 2025</time>.</li>
-          <li><strong>Plombier itinérant</strong>, royaume Champignon. <time datetime="2005">2005</time> à <time datetime="2024">2024</time>.</li>
-          <li><strong>Certificat de plomberie appliquée aux tuyaux verts</strong>, Guilde des plombiers du royaume Champignon. <time datetime="2005-06">Juin 2005</time>.</li>
+          <li>
+            <strong>Titre professionnel Concepteur Développeur d'Applications</strong>
+            <p>Le Comptoir Numérique, Vannes</p>
+            <p class="dates"><time datetime="2024-09">Septembre 2024</time> à <time datetime="2025-07">juillet 2025</time></p>
+          </li>
+          <li>
+            <strong>Plombier itinérant</strong>
+            <p>Royaume Champignon</p>
+            <p class="dates"><time datetime="2005">2005</time> à <time datetime="2024">2024</time></p>
+          </li>
+          <li>
+            <strong>Certificat de plomberie appliquée aux tuyaux verts</strong>
+            <p>Guilde des plombiers du royaume Champignon</p>
+            <p class="dates"><time datetime="2005-06">Juin 2005</time></p>
+          </li>
         </ul>
       </section>
 
-      <section>
-        <h2>Objectif professionnel</h2>
-        <ol>
-          <li>Lancer l'application de rencontre du royaume Koopa.</li>
-          <li>Accompagner trois structures locales de bout en bout.</li>
-          <li>Former un apprenti à la reprise de code existant.</li>
-        </ol>
+      <section class="section-objectifs">
+        <div class="container">
+          <h2>Objectif professionnel</h2>
+          <ol>
+            <li>Lancer l'application de rencontre du royaume Koopa.</li>
+            <li>Accompagner trois structures locales de bout en bout.</li>
+            <li>Former un apprenti à la reprise de code existant.</li>
+          </ol>
+        </div>
       </section>
 
-      <section>
+      <section class="section-competences container">
         <h2>Compétences</h2>
 
         <h3>Langages</h3>
@@ -151,83 +174,87 @@
         </table>
       </section>
 
-      <section>
-        <h2>M'écrire</h2>
-        <p>N'hésitez pas à me contacter, je n'y répondrai pas.</p>
+      <section class="section-message">
+        <div class="container">
+          <h2>M'écrire</h2>
+          <p>N'hésitez pas à me contacter, je n'y répondrai pas.</p>
 
-        <form action="merci.html" method="get">
-          <p>Tous les champs sont obligatoires, sauf le téléphone.</p>
-
-          <fieldset>
-            <legend>Coordonnées</legend>
-            <div>
-              <label for="nom">* Votre nom</label>
-              <input type="text" name="nom" id="nom" autocomplete="name" required>
-            </div>
-
-            <div>
-              <label for="email">* Votre email</label>
-              <input type="email" name="email" id="email" autocomplete="email" placeholder="johndoe@example.com" required>
-            </div>
-
-            <div>
-              <label for="tel">Votre numéro de téléphone</label>
-              <input type="tel" name="tel" id="tel" placeholder="0612345678" autocomplete="tel">
-            </div>
+          <form action="merci.html" method="get">
+            <p>Tous les champs sont obligatoires, sauf le téléphone.</p>
 
             <fieldset>
-              <legend>Êtes-vous un professionnel ou particulier ?</legend>
-              <input type="radio" name="categorie" id="categorie-pro" value="professionnel">
-              <label for="categorie-pro">Professionnel</label>
+              <legend>Coordonnées</legend>
+              <div>
+                <label for="nom">* Votre nom</label>
+                <input type="text" name="nom" id="nom" autocomplete="name" required>
+              </div>
 
-              <input type="radio" name="categorie" id="categorie-particulier" value="particulier">
-              <label for="categorie-particulier">Particulier</label>
+              <div>
+                <label for="email">* Votre email</label>
+                <input type="email" name="email" id="email" autocomplete="email" placeholder="johndoe@example.com" required>
+              </div>
+
+              <div>
+                <label for="tel">Votre numéro de téléphone</label>
+                <input type="tel" name="tel" id="tel" placeholder="0612345678" autocomplete="tel">
+              </div>
+
+              <fieldset>
+                <legend>Êtes-vous un professionnel ou particulier ?</legend>
+                <input type="radio" name="categorie" id="categorie-pro" value="professionnel">
+                <label for="categorie-pro">Professionnel</label>
+
+                <input type="radio" name="categorie" id="categorie-particulier" value="particulier">
+                <label for="categorie-particulier">Particulier</label>
+              </fieldset>
             </fieldset>
-          </fieldset>
 
-          <fieldset>
-            <legend>Message</legend>
+            <fieldset>
+              <legend>Message</legend>
+
+              <div>
+                <label for="sujet">Sujet</label>
+                <select name="sujet" id="sujet" required>
+                  <option value="">Sélectionner le sujet de votre message</option>
+                  <option value="stage">Demande de stage</option>
+                  <option value="boulot">Offre d'emploi</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="message">* Votre message</label>
+                <textarea name="message" id="message" rows="5" minlength="10" placeholder="10 caractères minimum" required></textarea>
+              </div>
+
+               <div>
+                <input type="checkbox" id="copie" name="copie" value="oui">
+                <label for="copie">M'envoyer une copie de ce message</label>
+              </div>
+            </fieldset>
 
             <div>
-              <label for="sujet">Sujet</label>
-              <select name="sujet" id="sujet" required>
-                <option value="">Sélectionner le sujet de votre message</option>
-                <option value="stage">Demande de stage</option>
-                <option value="boulot">Offre d'emploi</option>
-              </select>
+              <button type="submit">Envoyer le message</button>
             </div>
 
-            <div>
-              <label for="message">* Votre message</label>
-              <textarea name="message" id="message" rows="5" minlength="10" placeholder="10 caractères minimum" required></textarea>
-            </div>
-
-             <div>
-              <input type="checkbox" id="copie" name="copie" value="oui">
-              <label for="copie">M'envoyer une copie de ce message</label>
-            </div>
-          </fieldset>
-
-          <div>
-            <button type="submit">Envoyer le message</button>
-          </div>
-
-        </form>
+          </form>
+        </div>
       </section>
     </main>
 
-    <footer>
-      <nav aria-label="Liens du site">
-        <ul>
-          <li><a href="index.html" aria-current="page">Présentation</a></li>
-          <li><a href="ressources.html">Ressources</a></li>
-          <li><a href="soutenances.html">Soutenances</a></li>
-        </ul>
-      </nav>
+    <footer class="site-footer">
+      <div class="container">
+        <nav aria-label="Liens du site">
+          <ul>
+            <li><a href="index.html" aria-current="page">Présentation</a></li>
+            <li><a href="ressources.html">Ressources</a></li>
+            <li><a href="soutenances.html">Soutenances</a></li>
+          </ul>
+        </nav>
 
-      <p><a href="#haut">Revenir en haut de la page</a></p>
+        <p><a href="#haut">Revenir en haut de la page</a></p>
 
-      <p><small>© <time datetime="2026">2026</time> Mario</small></p>
+        <p><small>© <time datetime="2026">2026</time> Mario</small></p>
+      </div>
     </footer>
   </body>
 </html>

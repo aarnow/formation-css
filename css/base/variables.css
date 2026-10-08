@@ -1,0 +1,44 @@
+:root {
+  /* Les deux couleurs du site : la première pour les liens et les boutons,
+     la seconde pour le fond des bandes. Chacune a une nuance claire. */
+  --color-primary: #8f4a0c;
+  --color-primary-light: #f0a04b;
+  --color-secondary: #dceafb;
+  --color-secondary-light: #ecf3fd;
+
+  /* Le fond de la page, puis celui des blocs posés dessus. */
+  --color-bg: #f6f7f9;
+  --color-surface: #ffffff;
+  --color-surface-alt: #e7ecf4;
+
+  /* La couleur du texte, puis celle des mentions secondaires. */
+  --color-text: #16202e;
+  --color-text-muted: #5a6577;
+
+  /* La couleur des champs mal remplis. */
+  --color-error: #cf332a;
+
+  /* Les bordures : la courante, puis une plus visible. */
+  --color-border: #e2e6ec;
+  --color-border-strong: #b3c0d3;
+
+  /* Les deux polices du site : celle du texte courant, puis celle des titres
+     et des éléments mis en avant. Chacune a ses polices de secours. */
+  --font-body: "Roboto", system-ui, sans-serif;
+  --font-display: "Momo Trust Display", system-ui, sans-serif;
+
+  /* Le plafond de largeur du contenu, la marge laissée de chaque côté de la
+     page, et la largeur exacte de la colonne latérale. */
+  --content-max-width: 72rem;
+  --page-padding: 1.5rem;
+  --sidebar-width: 17rem;
+
+  /* La largeur maximale d'un bloc de texte : 640 pixels, soit environ
+     85 caractères dans la police du site. */
+  --text-max-width: 40rem;
+
+  /* L'arrondi des angles : celui des cartes, puis celui des champs et
+     des boutons. */
+  --radius: 10px;
+  --radius-small: 6px;
+}

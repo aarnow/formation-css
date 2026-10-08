@@ -1,0 +1,43 @@
+/* La largeur qu'on donne à un élément est sa largeur finale : le remplissage
+   et la bordure sont comptés dedans, et non ajoutés autour. */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Ces éléments n'ont plus aucune marge par défaut. */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+ol,
+dl,
+dd,
+fieldset {
+  margin: 0;
+}
+
+/* Les listes à puces perdent leur puce et leur décalage vers la droite. */
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+/* Une image occupe sa propre ligne, ne dépasse jamais la largeur de son
+   parent, et se réduit sans se déformer. */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Les champs de formulaire et les boutons n'héritent pas de la police du
+   site : le navigateur leur impose la sienne, plus petite. */
+input,
+select,
+textarea,
+button {
+  font: inherit;
+}
